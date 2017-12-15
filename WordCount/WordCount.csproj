@@ -2,7 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Lemur</RootNamespace>
+    <RootNamespace></RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Lemur\StringCount\CharCount.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Lemur\StringCount\CharCount.cs" />
+  </ItemGroup>
 
 </Project>

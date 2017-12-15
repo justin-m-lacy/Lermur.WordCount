@@ -3,3 +3,4 @@
 ################################################################################
 
 /.vs/WordCount/v15/Server/sqlite3
+/WordCount/obj/Debug/netstandard2.0
