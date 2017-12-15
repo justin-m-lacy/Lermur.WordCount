@@ -15,7 +15,7 @@ namespace Lemur.WordCount {
 		/// </summary>
 		/// <param name="source">The string being searched.</param>
 		/// <returns>The number of letter characters in a source string, or 0 if string is null.</returns>
-		static public int CountDigits( string source ) {
+		static public int Digits( string source ) {
 
 			if( string.IsNullOrEmpty( source ) ) {
 				return 0;
@@ -43,7 +43,7 @@ namespace Lemur.WordCount {
 		  /// </summary>
 		  /// <param name="source">The string being searched.</param>
 		  /// <returns>The number of letter characters in a source string, or 0 if string is null.</returns>
-		static public int CountLetters( string source ) {
+		static public int Letters( string source ) {
 
 			if( string.IsNullOrEmpty( source ) ) {
 				return 0;
@@ -70,7 +70,7 @@ namespace Lemur.WordCount {
 		/// </summary>
 		/// <param name="source">A string whose characters are being counted.</param>
 		/// <returns></returns>
-		static public int CountLexical( string source ) {
+		static public int Lexical( string source ) {
 
 			if( string.IsNullOrEmpty( source ) ) {
 				return 0;
@@ -97,7 +97,7 @@ namespace Lemur.WordCount {
 		/// </summary>
 		/// <param name="source"></param>
 		/// <returns>The number of characters in a source string, or 0 if the string is null.</returns>
-		static public int CountAll( string source ) {
+		static public int All( string source ) {
 
 			if( source == null ) { return 0; }
 			return source.Length;
@@ -109,7 +109,7 @@ namespace Lemur.WordCount {
 		/// </summary>
 		/// <param name="source"></param>
 		/// <returns></returns>
-		static public int CountChars( string source ) {
+		static public int Nonwhite( string source ) {
 
 			if( string.IsNullOrEmpty( source ) ) {
 				return 0;

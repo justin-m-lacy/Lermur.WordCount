@@ -15,7 +15,7 @@ namespace Lemur.StringCount {
 		/// </summary>
 		/// <param name="source"></param>
 		/// <returns></returns>
-		static public int CountSentences( string source ) {
+		static public int Count( string source ) {
 
 			if( source == null ) {
 				return 0;
@@ -24,8 +24,7 @@ namespace Lemur.StringCount {
 			char[] terminators = { '.', '!', '?' };
 
 			int len = source.Length;
-			int index = 0;
-			int count = 0;
+			int index = 0, count = 0;
 
 			while( index < len ) {
 
@@ -55,7 +54,7 @@ namespace Lemur.StringCount {
 		/// <returns>The number of sentences in the source string.
 		/// If the source string is null, the terminator array is null, or the terminator array
 		/// has no elements, 0 is returned.</returns>
-		static public int CountSentences( string source, char[] terminators ) {
+		static public int Count( string source, char[] terminators ) {
 
 			if( source == null || terminators == null || terminators.Length == 0 ) {
 				return 0;
